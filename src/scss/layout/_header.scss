@@ -1,23 +1,15 @@
 .header {
-	background-color: red;
-
 	&__menu {
-		background-color: blue;
 	}
 
 	&__hero {
-		background-color: green;
-
 		&--title {
-			color: yellow;
 		}
 
 		&--subtitle {
-			color: turquoise;
 		}
 
 		&--arrowDown {
-			background-color: violet;
 		}
 	}
 }
