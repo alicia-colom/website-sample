@@ -1,0 +1,51 @@
+
+
+.main {
+	background-color: lightblue;
+
+	&__intro {
+		background-color: lightcoral;
+
+		&--smallText {
+			color: yellowgreen;
+		}
+
+		&--title {
+			color: darkslategray;
+		}
+
+		&--text {
+			color: orange;
+		}
+
+		&--button {
+			background-color: darkviolet;
+		}
+	}
+	&__purchase {
+		background-color: mediumpurple;
+
+		&--title {
+			color: lightsalmon;
+		}
+
+		&--item {
+			background-color: lightgreen;
+		}
+
+		&--itemTitle {
+			color: darkolivegreen;
+		}
+
+		&--itemText {
+			color: darkred;
+		}
+
+		&--button {
+			background-color: brown;
+		}
+	}
+	&__arrowUp {
+		background-color: lightgreen;
+	}
+}

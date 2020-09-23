@@ -1,8 +1,19 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  background-color: midnightblue;
+  
+	&__menu {
+		background-color:lightcoral;
+  
+    &--link {
+      background-color: olivedrab;
+  	}
+	}
+
+	&__copyright {
+    color: ivory;
+
+		&--heart {
+      color: red;
+		}
+	}
 }

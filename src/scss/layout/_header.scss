@@ -1,5 +1,23 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+	background-color: red;
+
+	&__menu {
+		background-color: blue;
+	}
+
+	&__hero {
+		background-color: green;
+
+		&--title {
+			color: yellow;
+		}
+
+		&--subtitle {
+			color: turquoise;
+		}
+
+		&--arrowDown {
+			background-color: violet;
+		}
+	}
 }
