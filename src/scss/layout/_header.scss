@@ -5,17 +5,51 @@
 	background-color: $cerulean; /* Used if the image is unavailable */
 	background-position: top;
 	background-repeat: no-repeat;
-	color: $white;
+	position: relative;
+}
 
-	&__menu {
+.menuContainer {
+	background-color: $cerulean;
+	width: 44px;
+	height: 44px;
+	position: fixed;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.hero {
+	position: absolute;
+	bottom: 0;
+
+	&__text {
+		color: $white;
+		padding: 0 15px;
+		text-align: center;
+
+		&--title {
+			font-family: $font-title;
+			font-size: 42px;
+			text-transform: uppercase;
+			line-height: 55px;
+			padding-bottom: 5px;
+		}
+		&--subtitle {
+			font-family: $font-text;
+			font-size: 16px;
+			padding-top: 5px;
+		}
 	}
 
-	&__hero {
-		&--title {
-		}
-
-		&--subtitle {
-		}
+	&__arrowContainer {
+		background-color: white;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		margin: 45px 137px;
 
 		&--arrowDown {
 		}
