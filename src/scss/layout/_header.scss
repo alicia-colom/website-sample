@@ -1,11 +1,11 @@
 .header {
-	height: 100vh;
+/* 	height: 100vh;
 	width: 100vw;
 	background-image: url("../images/cover.jpg");
-	background-color: $cerulean; /* Used if the image is unavailable */
-	background-position: top;
+	background-color: $cerulean;  *//* Used if the image is unavailable */
+/* 	background-position: top;
 	background-repeat: no-repeat;
-	position: relative;
+	position: relative; */
 }
 
 .menuContainer {
@@ -16,45 +16,5 @@
 	display: flex;
 	text-align: center;
 	justify-content: center;
-}
-/* .probando {
-	position: absolute;
-	bottom: 0;
-} */
-
-.hero {
-	color: $white;
-	position: absolute;
-	bottom: 0;
-	display: flex;
-	flex-direction: column;
-
-	&__title {
-		font-family: $font-title;
-		font-size: 42px;
-		text-transform: uppercase;
-		line-height: 55px;
-		width: 10px;
-		text-align: center;
-		padding-bottom: 5px;
-	}
-	&__subtitle {
-		font-family: $font-text;
-		font-size: 16px;
-		padding-top: 5px;
-	}
-
-	&__arrowContainer {
-		background-color: white;
-		width: 45px;
-		height: 45px;
-		border-radius: 50%;
-		display: flex;
-		text-align: center;
-		justify-content: center;
-		margin: 45px 0;
-
-		/* 		&--arrowDown {
-		} */
-	}
+	z-index: 1;
 }
