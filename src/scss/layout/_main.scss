@@ -1,5 +1,6 @@
 .main {
 	&__intro {
+		background-color: $white;
 		&--smallText {
 		}
 
@@ -13,6 +14,9 @@
 		}
 	}
 	&__purchase {
+		background-color: $ice-blue;
+		color: $black;
+		
 		&--title {
 		}
 
