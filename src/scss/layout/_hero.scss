@@ -5,11 +5,12 @@
 	background-color: $cerulean; /* Used if the image is unavailable */
 	background-position: top;
 	background-repeat: no-repeat;
+	background-size: cover;
 	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+	align-items: center;
 
 	&__content {
     color: $white;
@@ -20,12 +21,24 @@
 			font-size: 42px;
 			text-transform: uppercase;
 			line-height: 55px;
-      padding-bottom: 5px;
+			padding-bottom: 10px;
+			@media all and (min-width: 768px) {
+				font-size: 80px;
+				line-height: 106px;
+			}
+			@media all and (min-width: 1200px) {
+				font-size: 100px;
+				line-height: 132px;
+				padding-bottom: 20px;
+			}
 		}
 		&--subtitle {
 			font-family: $font-text;
 			font-size: 16px;
-			padding-top: 5px;
+			@media all and (min-width: 768px) {
+				font-size: 24px;
+				padding-bottom: 0;
+			}
 		}
 	}
 	&__arrowContainer {

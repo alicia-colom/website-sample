@@ -1,45 +1,80 @@
-.main {
-	background-color: red;
-}
+
 .intro {
 	background-color: $white;
 	padding: 30px 15px 0 15px;
 
-	&__smallText {
-		color: $lightblue;
-		line-height: 30px;
-		font-family: $font-text;
-		font-size: 14px;
-		text-transform: capitalize;
+	@media all and (min-width: 768px) {
+		padding-right: 39px;
+		padding-left: 39px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	&__title {
-		color: $black;
-		line-height: 30px;
-		font-family: $font-title;
-		font-size: 24px;
-		text-transform: capitalize;
-	}
+	&__content {
+		max-width: 690px;
+		@media all and (min-width: 1200px) {
+			max-width: 730px;
+		}
 
-	&__text {
-		color: $greyish-brown;
-		line-height: 30px;
-		font-family: $font-text;
-		font-size: 18px;
-		padding-top: 15px;
-	}
 
-	&__button {
-		height: 45px;
-		width: 76px;
-		border-radius: 22.5px;
-		border: $bright-orange 2px solid;
-		background-color: $white;
-		color: $bright-orange;
-		line-height: 45px;
-		font-family: $font-text;
-		font-size: 20px;
-		margin: 30px 0 45px 0;
+		&--smallText {
+			color: $lightblue;
+			font-family: $font-text;
+			font-size: 14px;
+			line-height: 30px;
+			text-transform: capitalize;
+			@media all and (min-width: 1200px) {
+				font-size: 16px;
+			}
+		}
+
+		&--title {
+			color: $black;
+			font-family: $font-title;
+			font-size: 24px;
+			line-height: 30px;
+			text-transform: capitalize;
+			@media all and (min-width: 768px) {
+				font-size: 26px;
+				line-height: 45px;
+			}
+			@media all and (min-width: 1200px) {
+				font-size: 32px;
+			}
+		}
+
+		&--text {
+			color: $greyish-brown;
+			font-family: $font-text;
+			font-size: 18px;
+			line-height: 30px;
+			padding: 15px 0 30px 0;
+			@media all and (min-width: 768px) {
+				font-size: 20px;
+				padding-top: 30px;
+			}
+		}
+
+		&--button {
+			height: 45px;
+			width: 76px;
+			border-radius: 22.5px;
+			border: $bright-orange 2px solid;
+			background-color: $white;
+			color: $bright-orange;
+			line-height: 45px;
+			font-family: $font-text;
+			font-size: 20px;
+			margin-bottom: 45px;
+			@media all and (min-width: 768px) {
+				width: 91px;
+				margin-bottom: 60px;
+			}
+			@media all and (min-width: 1200px) {
+				width: 160px;
+			}
+		}
 	}
 }
 
@@ -106,7 +141,7 @@
 		justify-content: center;
 		transform: translate(0, 50%);
 
-/* 		@media all and (min-width: 768px) {
+		/* 		@media all and (min-width: 768px) {
 			transform: translate(0, -67.5px);
 		} */
 	}
