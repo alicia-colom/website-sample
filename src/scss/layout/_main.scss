@@ -16,7 +16,7 @@
 	&__purchase {
 		background-color: $ice-blue;
 		color: $black;
-		
+
 		&--title {
 		}
 
@@ -32,6 +32,24 @@
 		&--button {
 		}
 	}
-	&__arrowUp {
+	&__arrowContainer {
+		background-color: white;
+		-webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		/* 		transform: translate(0, -82.5px);
+ */
+		@media all and (min-width: 768px) {
+			transform: translate(0, -67.5px);
+		}
+
+		&--arrowUp {
+		}
 	}
 }
