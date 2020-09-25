@@ -60,4 +60,9 @@
 			}
 		}
 	}
+
+	/* EXTRA: add HOVER in arrowUp button */
+	&:hover {
+		background-color: $color-purchase;
+	}
 }
