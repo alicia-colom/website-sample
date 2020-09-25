@@ -15,175 +15,214 @@
 	<body>
 		<header>
 			<div class="menuContainer">
-				<a href="https://adalab.es/" title="Open the menu" alt="Drop down menu">
-					<img src="./assets/images/ico-menu.svg" />
+				<a
+					href="https://adalab.es/"
+					target="_blank"
+					class="linkDeco"
+					title="Open the menu"
+					alt="Drop down menu"
+					role="menubar"
+					><img src="./assets/images/ico-menu.svg" />
 				</a>
 			</div>
 		</header>
 
 		<div class="hero">
 			<div class="hero__content">
-				<h1 class="hero__content--title">
-					<div>Anonymous</div><div>proxy</div>
+				<h1 class="hero__content--title" role="headline">
+					<div>Anonymous</div>
+					<div>proxy</div>
 				</h1>
-				<p class="hero__content--subtitle">In hac habitasse platea dictumst.</p>
+				<p class="hero__content--subtitle">
+					In hac habitasse platea dictumst.
+				</p>
 			</div>
-			<div class="hero__arrowContainer">
-				<a href=""
-					><img
-						src="./assets/images/ico-scroll-down.svg"
-						href="#"
-						class="hero__arrowContainer--arrowDown"
-						title="Keep discovering"
-						alt="Next section link"
-				/></a>
-			</div>
+
+			<a
+				href="#"
+				class="hero__arrowContainer linkDeco"
+				title="Keep discovering"
+				alt="Next section link"
+				role="link"
+				><img src="./assets/images/ico-scroll-down.svg" />
+			</a>
 		</div>
 
 		<main>
 			<section role="Intro" class="intro">
 				<div class="intro__content">
-					<p class="intro__content--smallText">Insomnia tips</p>
-					<h2 class="intro__content--title">Looking through a window</h2>
-					<p class="intro__content--text">
+					<h2 class="intro__smallText">Insomnia tips</h2>
+					<h3 class="intro__title">Looking through a window</h3>
+					<p class="intro__text">
 						Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
 						luctus ex diam nec lectus. Vivamus semper sodales rutrum.
 					</p>
-					<button class="intro__content--button" href="" target="_blank" title="" alt="">
-						Go
-					</button>
+
+					<!-- Sobre el botón GO: He probado a utilizar <include> de link.html para la reutilización de código, pero tras varias pruebas no he conseguido que reconociera ciertos estilos. Por lo que he generado este trozo de código nuevo -->
+
+					<a href="https://adalab.es/" target="_blank" class="linkDeco">
+						<div
+							class="intro__button"
+							title="Let's go!"
+							alt="Insomnia tips link"
+							role="link"
+						>
+							Go
+						</div>
+					</a>
 				</div>
 			</section>
+
 			<section role="Purchase" class="purchase">
 				<h2 class="purchase__title">3 reasons to purchase</h2>
-				<div>
-					<div class="purchase__item">
-						<h3 class="purchase__item--title">Ut sed metus</h3>
-						<p class="purchase__item--text">
+				<ul role="list" class="listDeco">
+					<li class="purchase__item" role="article">
+						<h3 class="purchase__item--title" role="heading">Ut sed metus</h3>
+						<p class="purchase__item--text" role="text">
 							Lorem ipsum dolor sit amet, consecteur.
 						</p>
-					</div>
-					<div class="purchase__item">
-						<h3 class="purchase__item--title">Curabitur ac erat</h3>
-						<p class="purchase__item--text">
+					</li>
+					<li class="purchase__item" role="article">
+						<h3 class="purchase__item--title" role="heading">Curabitur ac erat</h3>
+						<p class="purchase__item--text" role="text">
 							Mauris mattis urna quis lorem molestie.
 						</p>
+					</li>
+					<li class="purchase__item" role="article">
+						<h3 class="purchase__item--title" role="heading">Morbi dictum</h3>
+						<p class="purchase__item--text" role="text">
+							Aliquam in dolor et dolor tincidunt.
+						</p>
+					</li>
+				</ul>
+
+				<!-- Sobre el botón MORE REASONS: He probado a utilizar <include> de link.html para la reutilización de código, pero tras varias pruebas no he conseguido que reconociera ciertos estilos. Por lo que he generado este trozo de código nuevo -->
+
+				<a href="https://adalab.es/" target="_blank" class="purchase__link linkDeco">
+					<div
+						class="purchase__link--button"
+						title="Know our reasons"
+						alt="Reasons link"
+						role="link"
+					>
+						More reasons
 					</div>
-					<div class="purchase__item">
-						<h3 class="purchase__item--title">Morbi dictum</h3>
-						<p class="purchase__item--text">Aliquam in dolor et dolor tincidunt.</p>
-					</div>
-				</div>
-				<button class="purchase__button" href="" target="_blank" title="" alt="">
-					More reasons
-				</button>
-				<div class="purchase__arrowContainer">
-					<img
-						src="./assets/images/ico-arrow.svg"
-						href="#"
-						class=""
-						title="Go to the top"
-						alt="Top page link"
-					/>
-				</div>
+				</a>
+
+				<a
+					href="#"
+					class="purchase__arrowContainer linkDeco"
+					title="Go to the top"
+					alt="Top page link"
+					role="link"
+					><img src="./assets/images/ico-arrow.svg" />
+				</a>
 			</section>
 		</main>
 
 		<footer class="footer">
-			<nav class="footer__menu container-size">
-				<ul>
+			<nav class="footer__menu containerSize">
+				<ul class="listDeco">
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://news.google.com/search?q=adalab&hl=es-419&gl=US&ceid=US%3Aes-419" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Have a look at our articles"
 						alt="Articles page link"
+						role="link"
 						>Articles</a>
 
 					</li>
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://www.dummies.com/web-design-development/html5-and-css3/" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Have a look at our books"
 						alt="Books page link"
+						role="link"
 						>Books</a>
 
 					</li>
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://www.meetup.com/es-ES/Reunion-informativa-Programa-Mentoras-ADaLab/" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Have a look at our next events"
 						alt="Events page link"
+						role="link"
 						>Events</a>
 
 					</li>
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://adalab.es/empresas/" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Know our reasons"
 						alt="Reasons page link"
+						role="link"
 						>Reasons</a>
 
 					</li>
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://medium.com/adalab/c%C3%B3mo-ser-la-programadora-front-end-junior-que-todas-las-empresas-quieren-abf16a511497" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Know some useful tips"
 						alt="Tips page link"
+						role="link"
 						>Tips</a>
 
 					</li>
 				</ul>
 			</nav>
 
-			<nav class="footer__menu footer__socialmedia container-size">
-				<ul>
+			<nav class="footer__menu footer__socialmedia containerSize">
+				<ul class="listDeco">
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://twitter.com/aliciacolom/" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Follow us on Twitter"
 						alt="Twitter account link"
+						role="link"
 						>Twitter</a>
 
 					</li>
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://www.instagram.com/aliciacolom/" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Follow us on Instagram"
 						alt="Instagram account link"
+						role="link"
 						>Instagram</a>
 
 					</li>
 					<li>
 						<a 
-						class="footer__menu--link" 
-						href="https://mastodon.social/about" 
+						href="https://adalab.es/" 
 						target="_blank"
+						class="footer__menu--link linkDeco" 
 						title="Follow us on Mastodon"
 						alt="Mastodon link"
+						role="link"
 						>Mastodon.social</a>
 
 					</li>
 				</ul>
 			</nav>
-			<ul class="footer__copyright container-size">
+			<ul class="footer__copyright containerSize listDeco">
 				<li><small> &copy;2017</small></li>
 				<li>
 					<small
-						>we
+						><span class="footer__copyright--we">We</span>
 						<span class="footer__copyright--heart">&#10084;</span> components</small
 					>
 				</li>
