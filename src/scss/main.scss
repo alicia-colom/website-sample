@@ -1,4 +1,14 @@
+// core
+@import "core/reset";
+@import "core/variables";
 
-@import 'core/reset';
-@import 'core/variables';
-@import 'pages/index';
+// layout
+@import "layout/header";
+@import "layout/hero";
+@import "layout/section1";
+@import "layout/section2";
+@import "layout/footer";
+@import "layout/arrow-footer";
+
+// pages
+@import "pages/index";

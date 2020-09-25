@@ -1,5 +1,5 @@
 .intro {
-	background-color: $white;
+	background-color: $color-lighter;
 	padding: 30px 15px 0 15px;
 
 	@media all and (min-width: 768px) {
@@ -18,7 +18,7 @@
 	}
 
 	&__smallText {
-		color: $lightblue;
+		color: $color-light-text;
 		font-family: $font-text;
 		font-size: 14px;
 		line-height: 30px;
@@ -29,7 +29,7 @@
 	}
 
 	&__title {
-		color: $black;
+		color: $color-darker;
 		font-family: $font-title;
 		font-size: 24px;
 		line-height: 30px;
@@ -44,7 +44,7 @@
 	}
 
 	&__text {
-		color: $greyish-brown;
+		color: $color-dark-text;
 		font-family: $font-text;
 		font-size: 18px;
 		line-height: 30px;
@@ -56,15 +56,15 @@
 	}
 
 	&__button {
+		background-color: $color-lighter;
 		height: 45px;
 		width: 76px;
+		border: $color-bright 2px solid;
 		border-radius: 22.5px;
-		border: $bright-orange 2px solid;
-		background-color: $white;
-		color: $bright-orange;
-		line-height: 45px;
+		color: $color-bright;
 		font-family: $font-text;
 		font-size: 20px;
+		line-height: 45px;
 		margin-bottom: 45px;
 		text-align: center;
 		@media all and (min-width: 768px) {
@@ -75,8 +75,8 @@
 			width: 160px;
 		}
 		&:hover {
-			background-color: $bright-orange;
-			color: $white;
+			background-color: $color-bright;
+			color: $color-lighter;
 		}
 	}
 }

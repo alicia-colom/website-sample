@@ -1,49 +1,40 @@
 <section id="purchase" class="purchase">
-  <h2 class="purchase__title">3 reasons to purchase</h2>
-  <ul role="list" class="listDeco">
-    <li class="purchase__item" role="article">
-      <h3 class="purchase__item--title" role="heading">Ut sed metus</h3>
-      <p class="purchase__item--text" role="text">
-        Lorem ipsum dolor sit amet, consecteur.
-      </p>
-    </li>
-    <li class="purchase__item" role="article">
-      <h3 class="purchase__item--title" role="heading">Curabitur ac erat</h3>
-      <p class="purchase__item--text" role="text">
-        Mauris mattis urna quis lorem molestie.
-      </p>
-    </li>
-    <li class="purchase__item" role="article">
-      <h3 class="purchase__item--title" role="heading">Morbi dictum</h3>
-      <p class="purchase__item--text" role="text">
-        Aliquam in dolor et dolor tincidunt.
-      </p>
-    </li>
-  </ul>
+	<h2 class="purchase__title">3 reasons to purchase</h2>
+	<ul class="wrapper listDeco">
+		<include
+			src="article.html"
+			titleArticle="Ut sed metus"
+			textArticle="Lorem ipsum dolor sit amet, consecteur."
+		></include>
+		<include
+			src="article.html"
+			titleArticle="Curabitur ac erat"
+			textArticle="Mauris mattis urna quis lorem molestie."
+		></include>
+		<include
+			src="article.html"
+			titleArticle="Morbi dictum"
+			textArticle="Aliquam in dolor et dolor tincidunt."
+		></include>
+	</ul>
 
-  <!-- Sobre el botón MORE REASONS: He probado a utilizar <include> de link.html para la reutilización de código, pero tras varias pruebas no he conseguido que reconociera ciertos estilos. Por lo que he generado este trozo de código nuevo -->
+	<!-- About MORE REASONS button: <include> of link.html in order to reuse code. But the styles doesn't work well. So I generate new code -->
 
-  <a
-    href="https://adalab.es/"
-    target="_blank"
-    class="purchase__link linkDeco"
-  >
-    <div
-      class="purchase__link--button"
-      title="Know our reasons"
-      alt="Reasons link"
-      role="link"
-    >
-      More reasons
-    </div>
-  </a>
+	<a href="https://adalab.es/" target="_blank" class="purchase__link linkDeco">
+		<div
+			class="purchase__link--button"
+			title="Know our reasons"
+			alt="Reasons link"
+		>
+			More reasons
+		</div>
+	</a>
 
-  <a
-    href="./index.html#top"
-    class="purchase__arrowContainer linkDeco"
-    title="Go to the top"
-    alt="Top page link"
-    role="link"
-    ><img src="./assets/images/ico-arrow.svg" class="purchase__arrowContainer--arrow" />
-  </a>
+	<a
+		href="./index.html#top"
+		class="arrowContainer"
+		title="Go to the top"
+		alt="Top page link"
+		><img src="./assets/images/ico-arrow.svg" class="arrowContainer--arrow" />
+	</a>
 </section>
