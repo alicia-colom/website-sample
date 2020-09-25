@@ -1,4 +1,4 @@
-.container-size {
+.containerSize {
 	@media all and (min-width: 768px) {
 		width: 210px;
 	}
@@ -46,7 +46,9 @@
 			padding: 0 15px 0 0;
 			order: -1;
 		}
-
+		&--we {
+			text-transform: lowercase;
+		}
 		&--heart {
 			color: $bright-orange;
 		}
