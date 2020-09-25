@@ -25,6 +25,11 @@
 			color: $color-lighter;
 			font-size: 16px;
 			text-transform: uppercase;
+
+			/* IMPROVEMENT: Add HOVER in footer links */
+			&:hover {
+				color: $color-bright;
+			}
 		}
 	}
 	&__socialmedia {
