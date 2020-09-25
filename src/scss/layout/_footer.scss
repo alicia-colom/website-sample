@@ -1,13 +1,8 @@
-.containerSize {
-	@media all and (min-width: 768px) {
-		width: 210px;
-	}
-}
-
 .footer {
-	background-color: $dark-grey-blue;
+	background-color: $color-footer;
 	font-family: $font-text;
 	line-height: 30px;
+	padding: 60px 0 45px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -16,7 +11,6 @@
 		flex-direction: row;
 		text-align: left;
 	}
-	padding: 60px 0 45px 0;
 	@media all and (min-width: 768px) {
 		padding-top: 45px;
 	}
@@ -28,13 +22,9 @@
 		}
 
 		&--link {
-			color: white;
-			text-transform: uppercase;
+			color: $color-lighter;
 			font-size: 16px;
-			
-			&:hover {
-				color: $bright-orange;
-			}
+			text-transform: uppercase;
 		}
 	}
 	&__socialmedia {
@@ -44,7 +34,7 @@
 		}
 	}
 	&__copyright {
-		color: white;
+		color: $color-lighter;
 		padding-top: 15px;
 		@media all and (min-width: 768px) {
 			padding: 0 15px 0 0;
@@ -54,10 +44,16 @@
 			text-transform: lowercase;
 		}
 		&--heart {
-			color: $bright-orange;
+			color: $color-bright;
 		}
 	}
 	small {
 		font-size: 14px;
+	}
+}
+
+.containerSize {
+	@media all and (min-width: 768px) {
+		width: 210px;
 	}
 }

@@ -1,5 +1,5 @@
 .menuBox {
-	background-color: $cerulean;
+	background-color: $color-menu;
 	width: 44px;
 	height: 44px;
 	position: fixed;
@@ -7,7 +7,4 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 1;
-
-	&__menu {
-	}
 }

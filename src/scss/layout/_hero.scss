@@ -2,7 +2,10 @@
 	height: 100vh;
 	max-width: 100vw;
 	background-image: url("../images/cover.jpg");
-	background-color: $cerulean; /* Used if the image is unavailable */
+
+	/* BG_COLOR: Used in low-end mobile or if the image is unavailable */
+	background-color: $color-menu;
+
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -13,14 +16,14 @@
 	align-items: center;
 
 	&__content {
-		color: $white;
+		color: $color-lighter;
 		text-align: center;
 
 		&--title {
 			font-family: $font-title;
 			font-size: 42px;
-			text-transform: uppercase;
 			line-height: 55px;
+			text-transform: uppercase;
 			padding-bottom: 10px;
 			@media all and (min-width: 768px) {
 				font-size: 80px;
@@ -41,50 +44,14 @@
 			}
 		}
 	}
-	
+
 	&__arrowContainer {
-		background-color: white;
+		background-color: $color-lighter;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
+		margin: 45px 0;
 		display: flex;
 		justify-content: center;
-		margin: 45px 0;
-
-		animation-delay: 1s;
-		animation-duration: 5s;
-		animation-name: arrowJump;
-		animation-iteration-count: infinite;
-		animation-timing-function: ease;
-
-		@keyframes arrowJump {
-			from {
-				transform: translate(0, 0);
-			}
-
-			5% {
-				transform: translate(0, 20px);
-			}
-
-			10% {
-				transform: translate(0, 10px);
-			}
-
-			15% {
-				transform: translate(0, 20px);
-			}
-
-			20% {
-				transform: translate(0, 0);
-			}
-
-			to {
-				transform: translate(0, 0);
-			}
-		}
-
-		&:hover {
-			background-color: $ice-blue;
-		}
 	}
 }

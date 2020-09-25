@@ -1,5 +1,12 @@
-@import "layout/header";
-@import "layout/hero";
-@import "layout/section1";
-@import "layout/section2";
-@import "layout/footer";
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.listDeco {
+	list-style: none;
+}
+
+.linkDeco {
+	text-decoration: none;
+}
