@@ -82,5 +82,9 @@
 				transform: translate(0, 0);
 			}
 		}
+
+		&:hover {
+			background-color: $ice-blue;
+		}
 	}
 }

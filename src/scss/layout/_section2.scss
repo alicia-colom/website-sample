@@ -102,7 +102,6 @@
 			animation-timing-function: linear;
 
 			@keyframes arrowSpin {
-
 				from {
 					transform: rotate(-360deg);
 				}
@@ -115,6 +114,10 @@
 					transform: rotate(0deg);
 				}
 			}
+		}
+
+		&:hover {
+			background-color: $ice-blue;
 		}
 	}
 }
