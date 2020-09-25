@@ -9,12 +9,12 @@
 	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
-  justify-content: flex-end;
+	justify-content: flex-end;
 	align-items: center;
 
 	&__content {
-    color: $white;
-    text-align: center;
+		color: $white;
+		text-align: center;
 
 		&--title {
 			font-family: $font-title;
@@ -41,6 +41,7 @@
 			}
 		}
 	}
+	
 	&__arrowContainer {
 		background-color: white;
 		width: 45px;
@@ -50,8 +51,36 @@
 		justify-content: center;
 		margin: 45px 0;
 
-/* 		&--arrowDown {
-      transform: translate(0, 130%);
-		} */
+		animation-delay: 1s;
+		animation-duration: 5s;
+		animation-name: arrowJump;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease;
+
+		@keyframes arrowJump {
+			from {
+				transform: translate(0, 0);
+			}
+
+			5% {
+				transform: translate(0, 20px);
+			}
+
+			10% {
+				transform: translate(0, 10px);
+			}
+
+			15% {
+				transform: translate(0, 20px);
+			}
+
+			20% {
+				transform: translate(0, 0);
+			}
+
+			to {
+				transform: translate(0, 0);
+			}
+		}
 	}
 }
