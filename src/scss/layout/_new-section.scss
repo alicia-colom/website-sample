@@ -1,0 +1,21 @@
+.new-section {
+	background-color: $color-bright;
+	font-family: $font-text;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	@media all and (min-width: 768px) {
+		background-color: $color-footer;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__title {
+		color: $color-lighter;
+		text-transform: capitalize;
+	}
+	&__link {
+		color: $color-lighter;
+	}
+}
